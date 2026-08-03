@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hi, I'm Indrajeet Khatarkar 👋
 
-## Getting Started
+## Software Engineer | DevOps Enthusiast | Automation Tester
 
-First, run the development server:
+Aspiring Software Engineer with hands-on experience in Core Java, SQL, Selenium WebDriver, AWS Cloud Services, Git, Maven, Jenkins, Docker and Linux.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I build software projects, automate testing workflows, and explore DevOps practices like CI/CD and cloud deployment.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Portfolio
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Live Website:
+https://indrajeet-portfolio-jawi.vercel.app/
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Skills
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Programming
+- Core Java
+- Python Basics
+- JavaScript
+- REST APIs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Testing
+- Selenium WebDriver
+- TestNG
+- Playwright
+- Manual Testing
+- Automation Testing
 
-## Deploy on Vercel
+### DevOps & Cloud
+- Git & GitHub
+- Jenkins
+- Maven
+- Docker
+- Kubernetes
+- SonarQube
+- AWS (EC2, S3, IAM, VPC, RDS, CloudWatch)
+- Linux
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Database
+- SQL
+- MySQL
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Projects
+
+### Spring Boot DevOps Deployment
+- Automated build and deployment workflow using Jenkins.
+- Used Git, Maven, Docker, AWS EC2 and Linux.
+
+### Timesheet Management Testing Project
+- Performed Manual and Automation Testing.
+- Created test cases and automated workflows using Selenium WebDriver, Java and TestNG.
+
+### Book Store Management System
+- Developed a MERN stack based application.
+- Used Git/GitHub for version control.
+
+---
+
+## 🎓 Education
+
+**Master of Computer Applications (MCA)**  
+RGPV, Bhopal
+
+---
+
+## 📫 Connect With Me
+
+GitHub:
+https://github.com/indrajeetkhatarkar
+
+LinkedIn:
+https://linkedin.com/in/indrajeet-khatarkar
