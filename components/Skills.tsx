@@ -4,16 +4,14 @@ import { motion } from "framer-motion";
 import {
   FaJava,
   FaAws,
-  FaDocker,
   FaLinux,
-  FaGitAlt,
 } from "react-icons/fa";
+
 import {
   SiSelenium,
   SiJenkins,
   SiKubernetes,
   SiMysql,
-  SiMaven,
   SiSonarqube,
 } from "react-icons/si";
 
@@ -114,17 +112,12 @@ export default function Skills() {
       className="relative overflow-hidden bg-[#050816] px-6 py-24 text-white"
     >
 
-
-      {/* Glow */}
-
       <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-purple-600/20 blur-[120px]" />
 
       <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-cyan-500/20 blur-[120px]" />
 
 
-
       <div className="relative z-10 mx-auto max-w-6xl">
-
 
 
         <motion.div
@@ -151,10 +144,7 @@ export default function Skills() {
             automation testing and cloud deployment.
           </p>
 
-
         </motion.div>
-
-
 
 
 
@@ -162,7 +152,6 @@ export default function Skills() {
 
 
           {skills.map((skill,index)=>(
-
 
             <motion.div
 
@@ -196,61 +185,42 @@ export default function Skills() {
             >
 
 
-
               <div className={`text-4xl ${skill.color}`}>
-
                 {skill.icon}
-
               </div>
 
 
-
               <h3 className="mt-5 text-2xl font-bold">
-
                 {skill.title}
-
               </h3>
-
 
 
 
               <div className="mt-5 flex flex-wrap gap-3">
 
-
                 {skill.items.map((item)=>(
 
-
                   <span
-
                     key={item}
-
                     className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-sm text-gray-300"
-
                   >
-
                     {item}
-
                   </span>
 
-
                 ))}
-
 
               </div>
 
 
             </motion.div>
 
-
           ))}
-
 
 
         </div>
 
 
       </div>
-
 
     </section>
 
