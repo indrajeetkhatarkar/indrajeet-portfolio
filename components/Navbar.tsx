@@ -1,10 +1,15 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 
 export default function Navbar() {
-
   const [open, setOpen] = useState(false);
 
   const menu = [
@@ -16,139 +21,115 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed left-0 top-5 z-50 w-full px-6">
+    <header className="fixed left-0 top-4 z-50 w-full px-4 md:px-6">
 
-      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-6 py-4 shadow-2xl backdrop-blur-xl">
+      <nav className="mx-auto flex h-[58px] max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-[#070b16]/80 px-4 shadow-2xl backdrop-blur-xl">
 
-
-        {/* Logo */}
+        {/* LOGO */}
         <a
           href="#home"
-          className="text-3xl font-black tracking-wide"
+          className="relative flex h-9 w-12 shrink-0 items-center justify-center"
         >
-          <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            IK
-          </span>
-          <span className="text-white">.</span>
+          <Image
+            src="/logo.png"
+            alt="IK Logo"
+            width={70}
+            height={70}
+            priority
+            className="h-9 w-9 scale-[2.4] object-contain drop-shadow-[0_0_22px_rgba(0,180,255,0.7)]"
+          />
         </a>
 
-
-
-        {/* Desktop Menu */}
-        <ul className="hidden items-center gap-8 text-sm font-medium text-gray-300 md:flex">
-
-          {menu.map((item)=>(
+        {/* DESKTOP MENU */}
+        <ul className="hidden items-center gap-9 text-sm font-medium text-gray-300 md:flex">
+          {menu.map((item) => (
             <li key={item.name}>
               <a
                 href={item.link}
-                className="transition hover:text-cyan-400"
+                className="transition-colors duration-300 hover:text-cyan-400"
               >
                 {item.name}
               </a>
             </li>
           ))}
-
         </ul>
 
-
-
-
-        {/* Right Side Desktop */}
-
-        <div className="hidden items-center gap-4 md:flex">
+        {/* DESKTOP RIGHT */}
+        <div className="hidden items-center gap-3 md:flex">
 
           <a
             href="https://github.com/indrajeetkhatarkar"
             target="_blank"
             rel="noreferrer"
-            className="text-xl text-gray-300 transition hover:scale-125 hover:text-cyan-400"
+            aria-label="GitHub"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-gray-300 transition duration-300 hover:scale-110 hover:border-cyan-400/50 hover:text-cyan-400"
           >
             <FaGithub />
           </a>
-
 
           <a
             href="https://linkedin.com/in/indrajeet-khatarkar"
             target="_blank"
             rel="noreferrer"
-            className="text-xl text-gray-300 transition hover:scale-125 hover:text-cyan-400"
+            aria-label="LinkedIn"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-gray-300 transition duration-300 hover:scale-110 hover:border-cyan-400/50 hover:text-cyan-400"
           >
             <FaLinkedin />
           </a>
 
-
           <a
             href="/resume.pdf"
             download
-            className="rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-2 text-sm font-bold text-black transition hover:scale-105"
+            className="ml-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 px-6 py-2.5 text-sm font-bold text-black shadow-[0_0_25px_rgba(59,130,246,0.25)] transition duration-300 hover:scale-105"
           >
             Resume
           </a>
 
         </div>
 
-
-
-
-        {/* Mobile Button */}
-
+        {/* MOBILE BUTTON */}
         <button
-          onClick={()=>setOpen(!open)}
-          className="text-2xl text-cyan-400 md:hidden"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl text-cyan-400 md:hidden"
         >
           {open ? <FaTimes /> : <FaBars />}
         </button>
 
-
-
       </nav>
 
-
-
-
-      {/* Mobile Menu */}
-
+      {/* MOBILE MENU */}
       {open && (
-
-        <div className="mx-6 mt-3 rounded-2xl border border-white/10 bg-[#050816]/95 p-6 backdrop-blur-xl md:hidden">
+        <div className="mx-4 mt-3 rounded-2xl border border-white/10 bg-[#080d1c]/95 p-6 shadow-2xl backdrop-blur-xl md:hidden">
 
           <ul className="flex flex-col gap-5 text-center text-gray-300">
 
-            {menu.map((item)=>(
-
+            {menu.map((item) => (
               <li key={item.name}>
-
                 <a
                   href={item.link}
-                  onClick={()=>setOpen(false)}
-                  className="transition hover:text-cyan-400"
+                  onClick={() => setOpen(false)}
+                  className="block py-1 transition hover:text-cyan-400"
                 >
                   {item.name}
                 </a>
-
               </li>
-
             ))}
 
-
-            <li>
-
+            <li className="pt-2">
               <a
                 href="/resume.pdf"
                 download
-                className="inline-block rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-2 font-bold text-black"
+                className="inline-block rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 px-7 py-3 font-bold text-black"
               >
                 Download Resume
               </a>
-
             </li>
 
           </ul>
 
         </div>
-
       )}
-
 
     </header>
   );
