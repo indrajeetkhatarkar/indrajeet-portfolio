@@ -11,7 +11,7 @@ I build software projects, automate testing workflows, and explore DevOps practi
 ## 🌐 Portfolio
 
 Live Website:
-https://indrajeet-portfolio-jawi.vercel.app/
+https://indrajeet-khatarkar-com.vercel.app/
 
 ---
 
